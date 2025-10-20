@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting App</title>
+</head>
+<body>
+    <h1 th:text="${message}"></h1>
+    <form action="/greet" method="post">
+        Enter your name: <input type="text" name="name">
+        <input type="submit" value="Greet Me">
+    </form>
+</body>
+</html>
+
