@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Greeting App</title>
+    <title>Greet Me</title>
 </head>
 <body>
-    <h1 th:text="${message}"></h1>
-    <form action="/greet" method="post">
-        Enter your name: <input type="text" name="name">
-        <input type="submit" value="Greet Me">
+    <h1>{% if name %}Hello, {{ name }}!{% else %}Enter your name{% endif %}</h1>
+    <form method="post">
+        <input type="text" name="name" placeholder="Your Name">
+        <button type="submit">Greet Me</button>
     </form>
 </body>
 </html>
-
